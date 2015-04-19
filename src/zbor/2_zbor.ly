@@ -3,9 +3,9 @@
 
 \header {
   composer = "zbor"
-  title = "TEBE BOGA HVALIMO"
+  title = "HVALI DUŠO BOGA"
   titlex = "Duhovne Pjesme"
-  broj = "1"
+  broj = "2"
 }
 
 \include "s02_frbo.ily"
@@ -23,130 +23,50 @@ global = {
 soprano = \relative c'' {
   \global
   \mark \default
-  g2 g4 |
-  g4( fis) g |
-  a4( h) a |
-  g2.\fermata |
-  h2 h4 |
-  h4( a) h |
-  d4( c) h |
-  h2 a4\fermata |
+  g4 g d' |
+  h4. a8 g4 |
+  fis4 e d |
+  e4 fis g |
+  a2. |
+  g2. |
   
-  g2 g4 |
-  g4( fis) g |
-  a4( h) a |
-  g2.\fermata |
-  h2 h4 |
-  h4( a) h |
-  d4( c) h |
-  h2 a4\fermata |
+   g4 g d' |
+  h4. a8 g4 |
+  fis4 e d |
+  e4 fis g |
+  a2. |
+  g2. |
   
-  %REFREN
   \mark \default
-  a2 h4 |
-  c4( h) a |
-  h2 c4 |
-  d2.\fermata |
-  e2 e4 |
-  d4( c) h |
-  c4( h) a |
-  g2.\fermata |
+  d'4 d d |
+  e2. |
+  h4 c d |
+  d4 c h |
+  a2. |
+  d,4 e fis |
+  g4 a h |
+  a2. |
+  g2. |
+  \bar "||"
+  g2. |
+  g2. |
   \bar "|."
   
 }
 
 alto = \relative c' {
   \global
-  d2 d4 |
-  e2 d4 |
-  e4( d) c |
-  h2. |
-  g'2 g4 |
-  g4( fis) g |
-  a2 g4 |
-  g2 fis4 |
-  
-  d2 d4 |
-  e2 d4 |
-  e4( d) c |
-  h2. |
-  g'2 g4 |
-  g4( fis) g |
-  a2 g4 |
-  g2 fis4 |
-  
-  %REFREN
-  fis2 g4 |
-  a4( g) fis |
-  g2 g4 |
-  g2. |
-  g2 a4 |
-  a4( fis) g |
-  a4( g) fis |
-  d2. |
+  d4 e d |
 }
 
 tenor = \relative c' {
   \global
-  h2 h4 |
-  h2 g4 |
-  g2 fis4 |
-  g2. |
-  d'2 d4 |
-  d2 d4 |
-  d2 d4 |
-  d2 d4 |
-  
-  h2 h4 |
-  h2 g4 |
-  g2 fis4 |
-  g2. |
-  d'2 d4 |
-  d2 d4 |
-  d2 d4 |
-  d2 d4 |
-  
-  %REFREN
-  d2 d4 |
-  d2 d4 |
-  d2 e4 |
-  d2. |
-  c2 c4 |
-  a2 g4 |
-  e'4( d) c |
-  h2. |
+  h4 h a |
 }
 
 bass = \relative c' {
   \global
-  g2 g4 |
-  e2 h4 |
-  c4( d) d |
-  g,2. |
-  g4( h) d |
-  g2 g4 |
-  fis2 g4 |
-  d2 d4 |
-  
-  g2 g4 |
-  e2 h4 |
-  c4( d) d |
-  g,2. |
-  g4( h) d |
-  g2 g4 |
-  fis2 g4 |
-  d2 d4 |
-  
-  %REFREN
-  d2 d4 |
-  d2 c4 |
-  h4( g') e |
-  h2. |
-  c4( c') a |
-  fis4( dis) e |
-  c4( d) d |
-  g,2. |
-
+  g4 e fis |
 }
 
 akordi = \chordmode {
@@ -158,53 +78,24 @@ akordi = \chordmode {
 kiticaA = \lyricmode {
   \set stanza = #"1. "
   %\skip4 \skip4
-Te -- be Bo -- ga hva -- li -- mo,
-sla -- već Tvo -- ja sve -- ta dje -- la.
-Tvo -- ju moć ve -- li -- ća -- mo,
-di -- vi Ti __ se ze -- mlja cije -- la!
-
-Što s'od vije -- ka bi -- o Ti,
-o -- stat ćeš __ u vje -- čno -- sti.
-}
-
-ref = \lyricmode {
- 
+  Hva -- li du -- šo
 }
 
 kiticaB = \lyricmode {
   \set stanza = #"2. "
-  Sve što mo -- že sla -- vi Te,
-  ke -- ru -- bi -- ni, se -- ra -- fi -- ni.
-  Pje -- va -- ju __ Ti sla -- vo -- poj,
-  s'an -- đe -- li -- ma na __ vi -- si -- ni:
-  
-  Svet, svet, svet je Go -- spod Bog,
-  kralj pre -- sla -- vni pu -- ka svog.
+  Gos -- po -- da
 }
 
 kiticaC = \lyricmode {
   \set stanza = #"3. "
   %\skip4 \skip4
-  Po -- gle -- daj __ na na -- rod svoj!
-  _ Mi -- lo -- stiv sva -- gda bu -- di!
-  Pra -- vim pu -- tem vo -- di ga,
-  da mi du -- šman ne __ na -- u -- di.
-  
-  Skru -- šen glas __ mu sa -- slu -- šaj,
-  i __ u vje -- čni pri -- mi raj.
+  Gos -- po -- da
 }
 
 kiticaD = \lyricmode {
   \set stanza = #"4. "
   %\skip4 \skip4
-  Smi -- luj nam __ se Go -- spo -- de!
-  Bla -- go -- slov nam svoj po -- dije -- li!
-  Do -- bro -- tom __ nas pra -- ti svud
-  kroz taj grje -- šni ži -- vot cije -- li.
-  
-  Bu -- di s'na -- ma sva -- ki čas,
-  svih stvo -- re -- nja je -- din spas.
-  
+  Gos -- po -- da
 }
 
 #(define (rest-score r)
@@ -309,18 +200,6 @@ kiticaD = \lyricmode {
     \tempo 4=100
   }
 }
-
-%\score {
-%  <<
-%    \new ChordNames { \semiGermanChords \jazzChords \akordi }
-%    \new Staff { \note }
-%    \addlyrics { \kiticaA \ref }
-%    \addlyrics { \kiticaB }
-%    \addlyrics { \kiticaC }
-%  >>
-  %	\midi {}
-%}
-
 
 
 %{
