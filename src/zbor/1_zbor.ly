@@ -188,7 +188,7 @@ kiticaC = \lyricmode {
   Po -- gle -- daj __ na na -- rod svoj!
   _ Mi -- lo -- stiv sva -- gda bu -- di!
   Pra -- vim pu -- tem vo -- di ga,
-  da mi du -- šman ne __ na -- u -- di.
+  da mu du -- šman ne __ na -- u -- di.
   
   Skru -- šen glas __ mu sa -- slu -- šaj,
   i __ u vje -- čni pri -- mi raj.
