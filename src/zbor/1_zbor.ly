@@ -17,7 +17,7 @@
 global = {
   \key g \major
   \time 3/4
-  %\set Staff.midiInstrument = #"glockenspiel"
+  %\set Staff.midiInstrument = #"trumpet"
 }
 
 soprano = \relative c'' {
@@ -158,13 +158,13 @@ akordi = \chordmode {
 kiticaA = \lyricmode {
   \set stanza = #"1. "
   %\skip4 \skip4
-Te -- be Bo -- ga hva -- li -- mo,
-sla -- već Tvo -- ja sve -- ta dje -- la.
-Tvo -- ju moć ve -- li -- ća -- mo,
-di -- vi Ti __ se ze -- mlja cije -- la!
+  Te -- be Bo -- ga hva -- li -- mo,
+  sla -- već Tvo -- ja sve -- ta dje -- la.
+  Tvo -- ju moć ve -- li -- ća -- mo,
+  di -- vi Ti __ se ze -- mlja cije -- la!
 
-Što s'od vije -- ka bi -- o Ti,
-o -- stat ćeš __ u vje -- čno -- sti.
+  Što s'od vije -- ka bi -- o Ti,
+  o -- stat ćeš __ u vje -- čno -- sti.
 }
 
 ref = \lyricmode {
@@ -186,18 +186,21 @@ kiticaC = \lyricmode {
   \set stanza = #"3. "
   %\skip4 \skip4
   Po -- gle -- daj __ na na -- rod svoj!
-  _ Mi -- lo -- stiv sva -- gda bu -- di!
+  %STARO
+  %_ Mi -- lo -- stiv sva -- gda bu -- di!
+  %PRIJEDLOG
+  Mi -- lo -- stiv mu sva -- gda bu -- di!
   Pra -- vim pu -- tem vo -- di ga,
   da mu du -- šman ne __ na -- u -- di.
   
-  Skru -- šen glas __ mu sa -- slu -- šaj,
-  i __ u vje -- čni pri -- mi raj.
+  Skru -- šen glas mu sa -- slu -- šaj,
+  i u vje -- čni pri -- mi raj.
 }
 
 kiticaD = \lyricmode {
   \set stanza = #"4. "
   %\skip4 \skip4
-  Smi -- luj nam __ se Go -- spo -- de!
+  Smi -- luj nam se Go -- spo -- de!
   Bla -- go -- slov nam svoj po -- dije -- li!
   Do -- bro -- tom __ nas pra -- ti svud
   kroz taj grje -- šni ži -- vot cije -- li.
@@ -272,7 +275,8 @@ kiticaD = \lyricmode {
     %\new ChordNames {\akordi}
     \new Staff \with {
       \override RestCollision.positioning-done = #merge-rests-on-positioning
-      midiInstrument = "choir aahs"
+      %midiInstrument = "choir aahs"
+      midiInstrument = #"violin" 
       %instrumentName = \markup \center-column { "S" "A" }
     } <<
       \new Voice = "soprano" { \voiceOne \soprano }

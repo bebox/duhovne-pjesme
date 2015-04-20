@@ -62,7 +62,7 @@ akordi = \chordmode {
   g2. | g | d2 g4 | g2 d4 |
   
   d2. | d:7 | g | g |
-  c2. | g | a2:m d4 | g2. |
+  c2. | g2 e4:m | a2:m d4 | g2. |
 }
 
 kiticaA = \lyricmode {
@@ -96,18 +96,21 @@ kiticaC = \lyricmode {
   \set stanza = #"3. "
   %\skip4 \skip4
   Po -- gle -- daj __ na na -- rod svoj!
-  _ Mi -- lo -- stiv sva -- gda bu -- di!
+  %STARO
+  %_ Mi -- lo -- stiv sva -- gda bu -- di!
+  %PRIJEDLOG
+  Mi -- lo -- stiv mu sva -- gda bu -- di!
   Pra -- vim pu -- tem vo -- di ga,
-  da mi du -- šman ne __ na -- u -- di.
+  da mu du -- šman ne __ na -- u -- di.
   
-  Skru -- šen glas __ mu sa -- slu -- šaj,
-  i __ u vje -- čni pri -- mi raj.
+  Skru -- šen glas mu sa -- slu -- šaj,
+  i u vje -- čni pri -- mi raj.
 }
 
 kiticaD = \lyricmode {
   \set stanza = #"4. "
   %\skip4 \skip4
-  Smi -- luj nam __ se Go -- spo -- de!
+  Smi -- luj nam se Go -- spo -- de!
   Bla -- go -- slov nam svoj po -- dije -- li!
   Do -- bro -- tom __ nas pra -- ti svud
   kroz taj grje -- šni ži -- vot cije -- li.
