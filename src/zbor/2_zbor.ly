@@ -285,9 +285,9 @@ kiticaD = \lyricmode {
     \context Lyrics = "verse4" \lyricsto "soprano" \kiticaD
   >>
   \layout { }
-  \midi {
-    \tempo 4=100
-  }
+  %\midi {
+  %  \tempo 4=100
+  %}
 }
 
 

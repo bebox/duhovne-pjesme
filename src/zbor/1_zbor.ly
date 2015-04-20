@@ -309,9 +309,9 @@ kiticaD = \lyricmode {
     \context Lyrics = "verse4" \lyricsto "bass" \kiticaD
   >>
   \layout { }
-  \midi {
-    \tempo 4=100
-  }
+  %\midi {
+  %  \tempo 4=100
+  %}
 }
 
 %\score {

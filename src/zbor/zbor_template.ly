@@ -172,23 +172,10 @@ kiticaD = \lyricmode {
     \context Lyrics = "verse4" \lyricsto "bass" \kiticaD
   >>
   \layout { }
-  \midi {
-    \tempo 4=100
-  }
+  %\midi {
+  %  \tempo 4=100
+  %}
 }
-
-%\score {
-%  <<
-%    \new ChordNames { \semiGermanChords \jazzChords \akordi }
-%    \new Staff { \note }
-%    \addlyrics { \kiticaA \ref }
-%    \addlyrics { \kiticaB }
-%    \addlyrics { \kiticaC }
-%  >>
-  %	\midi {}
-%}
-
-
 
 %{
 convert-ly (GNU LilyPond) 2.18.2  convert-ly: Processing `'...
