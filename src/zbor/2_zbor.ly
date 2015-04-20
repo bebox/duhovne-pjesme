@@ -2,7 +2,7 @@
 \include "deutsch.ly"
 
 \header {
-  composer = "zbor"
+  composer = " "
   title = "HVALI DUŠO BOGA"
   titlex = "Duhovne Pjesme"
   broj = "2"

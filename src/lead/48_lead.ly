@@ -2,7 +2,7 @@
 \include "deutsch.ly"
 
 \header {
-  composer = "lead"
+  composer = " "
   title = "IZIĐI, SVIJET TAJ OSTAVI"
   titlex = "Duhovne Pjesme"
   broj = "48"
