@@ -18,6 +18,7 @@ global = {
   \key g \major
   \time 3/4
   %\set Staff.midiInstrument = #"glockenspiel"
+  \accidentalStyle Score.piano
 }
 
 soprano = \relative c'' {
@@ -57,16 +58,91 @@ soprano = \relative c'' {
 alto = \relative c' {
   \global
   d4 e d |
+  g4. fis8 e4 |
+  d4 c h |
+  c4 c h |
+  e4 d c |
+  h2.
+  
+  d4 e d |
+  g4. fis8 e4 |
+  d4 c h |
+  c4 c h |
+  e4 d c |
+  h2.
+  
+  %REFREN
+  g'4 a g |
+  g2. |
+  g4 g a |
+  g4 e8( fis) g4 |
+  fis2. |
+  d4 c c |
+  h4 e dis |
+  e2( d4) |
+  h2. |
+  c2. |
+  h2. |
+  
 }
 
 tenor = \relative c' {
   \global
   h4 h a |
+  d4. d8 h4 |
+  h4 g g |
+  g4 a g |
+  g4( fis2) |
+  g2. |
+  
+  h4 h a |
+  d4. d8 h4 |
+  h4 g g |
+  g4 a g |
+  g4( fis2) |
+  g2. |
+  
+  h4 a h |
+  c2. |
+  d4 c a |
+  h4 d d |
+  d2. |
+  g,4 g a |
+  g4 e fis |
+  e4( a8 g fis4) |
+  g2. |
+  e2. |
+  d2. |
 }
 
 bass = \relative c' {
   \global
   g4 e fis |
+  g4. d8 e4 |
+  h4 c g |
+  c4 a e' |
+  c4( d2) |
+  g,2. |
+  
+  g'4 e fis |
+  g4. d8 e4 |
+  h4 c g |
+  c4 a e' |
+  c4( d2) |
+  g,2. |
+  
+  %REFREN
+  g'4 fis g |
+  c,2. |
+  g'4 e fis |
+  g4 a h8( g) |
+  d2. |
+  h4 c a |
+  e'4 c h |
+  c2( d4) |
+  g,2. |
+  c2. |
+  g2. |
 }
 
 akordi = \chordmode {
@@ -78,24 +154,37 @@ akordi = \chordmode {
 kiticaA = \lyricmode {
   \set stanza = #"1. "
   %\skip4 \skip4
-  Hva -- li du -- šo
+  Hva -- li du -- šo Bo -- ga na ne -- bu mo -- ćno -- ga kra -- lja.
+  To je mo -- ja že -- lja, da hva -- lim o -- nog, kog va -- lja.
+  
+  O, do -- đi -- te, psal -- tir, har -- fu u -- zmi -- te.
+  S'pje -- smom pro -- sla -- vi -- te kra -- lja.
 }
 
 kiticaB = \lyricmode {
   \set stanza = #"2. "
-  Gos -- po -- da
+  Gos -- po -- da hva -- li, jer di -- vno i vje -- što te saz -- da;
+  zdra -- vlje ti da -- je i mud -- ro ru -- ko -- vo -- di svag -- da.
+  U bije -- di zloj, po -- gled na te spu -- šta svoj,
+  bra -- ni te od zlo -- be svag -- da.
 }
 
 kiticaC = \lyricmode {
   \set stanza = #"3. "
   %\skip4 \skip4
-  Gos -- po -- da
+  Gos -- po -- da hva -- li, ko -- ji -- ti sve da -- je što tre -- ba,
+  ko -- ji ti lju -- bav i bla -- go -- slov ša -- lje sa ne -- ba.
+  Sje -- ćaj se tog što u -- či -- nit mo -- že Bog,
+  da te du -- šman ne u -- vre -- ba.
 }
 
 kiticaD = \lyricmode {
   \set stanza = #"4. "
   %\skip4 \skip4
-  Gos -- po -- da
+  Gos -- po -- da hva -- li što je u me -- ni: sve što di -- še
+  ne -- ka hva -- li i -- me Njeg' -- vo sve -- to u -- vijek vi -- še!
+  Svje -- tlo jest Bog! Sje -- ćaj se du -- šo vijek tog.
+  I -- sti -- na vje -- čna to, a -- men!
 }
 
 #(define (rest-score r)
@@ -192,8 +281,8 @@ kiticaD = \lyricmode {
     >>
     \context Lyrics = "verse1" \lyricsto "soprano" \kiticaA
     \context Lyrics = "verse2" \lyricsto "soprano" \kiticaB
-    \context Lyrics = "verse3" \lyricsto "tenor" \kiticaC
-    \context Lyrics = "verse4" \lyricsto "bass" \kiticaD
+    \context Lyrics = "verse3" \lyricsto "soprano" \kiticaC
+    \context Lyrics = "verse4" \lyricsto "soprano" \kiticaD
   >>
   \layout { }
   \midi {
