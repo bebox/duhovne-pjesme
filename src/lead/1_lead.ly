@@ -54,13 +54,15 @@ note = \relative c'' {
 akordi = \chordmode {
   \set chordChanges = ##t
   %\skip 2
-  g2. | e:m | c2 d4 | g2. |
-  g2. | g | g | d |
-  g2. | e:m | c2 d4 | g2. |
-  g2. | g | g | d |
+  g2. | e:m | a2:m
+  d4 | g2. |
+  g2. | g | d2 g4 | g2 d4 |
+  g2. | e:m | a2:m
+  d4 | g2. |
+  g2. | g | d2 g4 | g2 d4 |
   
-  d2. | d | g | g |
-  c2. | g | c2 d4 | g2. |
+  d2. | d:7 | g | g |
+  c2. | g | a2:m d4 | g2. |
 }
 
 kiticaA = \lyricmode {
