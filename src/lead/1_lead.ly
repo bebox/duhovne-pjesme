@@ -2,9 +2,10 @@
 \include "deutsch.ly"
 
 \header {
-  composer = " "
+  poet = "Po Ambrosius von Ignaz Franzu, 1719-1790"
+  composer = "Beč 1774 / Heinrich Bone 1852"
   title = "TEBE BOGA HVALIMO"
-  titlex = "Duhovne Pjesme"
+  %titlex = "Duhovne Pjesme"
   broj = "1"
 }
 
@@ -15,7 +16,7 @@
 }
 
 note = \relative c'' {
-  %\tempo 4 = 148
+  \tempo 4 = 85
   \key g \major
   \time 3/4
   \mark \default
@@ -63,6 +64,79 @@ akordi = \chordmode {
   
   d2. | d:7 | g | g |
   c2. | g2 e4:m | a2:m d4 | g2. |
+}
+
+akordiOpsezno = \chordmode {
+  \set chordChanges = ##t
+  \repeat unfold 2 {
+  g2. |
+  e2:m g4/h |
+  c4:6 g/d d:7 |
+  g2. |
+  
+  g4 g/h g/d |
+  g4 d/g g |
+  d4/fis d:7/fis g |
+  g2/d d4 | }
+  
+  %refren
+  d2 g4/d |
+  d4:7 g/d d/c |
+  g4/h g c/e |
+  g2./h |
+  c2 a4:m |
+  d4/fis dis:dim e:m |
+  a4:m/c g/d d:7 |
+  g2. |
+  
+}
+
+akordiNjem = \chordmode {
+  \set chordChanges = ##t
+  \repeat unfold 2 {
+  g2. |
+  g4 d g |
+  d g d |
+  g2. |
+  g2. |
+  g4 d g |
+  g4 d g |
+  g4/d d2 |
+  }
+  
+  d2 g4/d |
+  d2. |
+  g2. |
+  g2.:7 |
+  c2. |
+  g4 d g |
+  c4 g/d d |
+  g2. |
+}
+
+akordiPro = \chordmode {
+  \set chordChanges = ##f
+  \repeat unfold 2 {
+  g2. |
+  e2:m g4 |
+  c4:6 d:6 d4 |
+  g2. |
+  
+  g2. |
+  g2. |
+  d2 g4 |
+  g2 d4 | }
+  
+  %refren
+  d2 g4 |
+  d2. |
+  g2 c4 |
+  g2. |
+  c2 a4:m |
+  d4 dis:dim e:m |
+  a2:m d4 |
+  g2. |
+  
 }
 
 kiticaA = \lyricmode {
@@ -122,14 +196,22 @@ kiticaD = \lyricmode {
 
 \score {
   <<
-    \new ChordNames { \semiGermanChords \jazzChords \akordi }
+    \new ChordNames { \semiGermanChords \jazzChords \akordiPro }
     \new Staff { \note }
     \addlyrics { \kiticaA }
     \addlyrics { \kiticaB }
     \addlyrics { \kiticaC }
     \addlyrics { \kiticaD }
   >>
-  %	\midi {}
+    \layout {}
+    \midi { \tempo 4 = 85
+        \context {
+      \type "Performer_group"
+      \consists "Staff_performer"
+      \name ChordNames
+      \defaultchild Voice
+    }
+    }
 }
 
 
