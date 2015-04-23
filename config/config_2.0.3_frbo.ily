@@ -264,7 +264,7 @@ aFourR = \paper {
 }
 
 \header {
-  copyright = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Creative Commons Attribution-ShareAlike 4.0 | Riječi Iskrene | Dravska 8, Pušćine } }
+  copyright = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Creative Commons Attribution - ShareAlike 4.0 | Riječi Iskrene | Dravska 8, Pušćine } }
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { \simple #(strftime "%d/%m/%Y" (localtime (current-time)))
   %                                                                                                  \with-url #"http://lilypond.org/web/" { LilyPond \simple #(lilypond-version)
   %                                                                                                                                          (http://lilypond.org/) } } }
