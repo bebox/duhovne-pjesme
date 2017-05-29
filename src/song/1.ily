@@ -1,8 +1,10 @@
 \include "deutsch.ly"
+\include "titles.ily"
 
 \header {
   composer = " "
-  title = "TEBE BOGA HVALIMO"
+  %title = "TEBE BOGA HVALIMO"
+  title = \"1"
   titlex = "Duhovne Pjesme"
   broj = "1"
 }

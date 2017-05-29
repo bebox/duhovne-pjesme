@@ -1,17 +1,17 @@
 %version
-\include "../../config/version.ily"
+\include "config/version.ily"
 
 %song
-\include "../song/48.ily"
+\include "song/48.ily"
 
 %notes
-\include "../notes/soprano/48_s.ily"
+\include "notes/soprano/48_s.ily"
 
 %chords
-\include "../chords/48_c.ily"
+\include "chords/48_c.ily"
 
 %lyrics
-\include "../lyrics/48_l.ily"
+\include "lyrics/48_l.ily"
 
 \score {
   <<
@@ -23,5 +23,5 @@
     \addlyrics { \verseD }
     \addlyrics { \verseE }
   >>
-   \include "../../config/lead_layout_conf.ily"
+   \include "config/lead_layout_conf.ily"
 }

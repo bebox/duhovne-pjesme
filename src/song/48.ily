@@ -1,8 +1,9 @@
 \include "deutsch.ly"
+\include "titles.ily"
 
 \header {
   composer = " "
-  title = "IZIĐI, SVIJET TAJ OSTAVI"
+  title = \"48"
   titlex = "Duhovne Pjesme"
   broj = "48"
 }

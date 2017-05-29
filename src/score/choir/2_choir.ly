@@ -1,20 +1,20 @@
 %version
-\include "../../../config/version.ily"
+\include "config/version.ily"
 
 %song
-\include "../../song/2.ily"
+\include "song/2.ily"
 
 %notes
-\include "../../notes/soprano/2_s.ily"
-\include "../../notes/alto/2_a.ily"
-\include "../../notes/tenor/2_t.ily"
-\include "../../notes/bass/2_b.ily"
+\include "notes/soprano/2_s.ily"
+\include "notes/alto/2_a.ily"
+\include "notes/tenor/2_t.ily"
+\include "notes/bass/2_b.ily"
 
 %lyrics
-\include "../../lyrics/2_l.ily"
+\include "lyrics/2_l.ily"
 
 %choir layout behaviour
-\include "../../../config/choir_conf.ily"
+\include "config/choir_conf.ily"
 
 %score
 \score {
@@ -51,5 +51,5 @@
     \context Lyrics = "verse3" \lyricsto "soprano" \verseC
     \context Lyrics = "verse4" \lyricsto "soprano" \verseD
   >>
-  \include "../../../config/choir_layout_conf.ily"
+  \include "config/choir_layout_conf.ily"
 }
