@@ -1,4 +1,4 @@
-\version "2.17.95"
+\version "2.19.49"
 %%%%%%%%%%%%
 %% CONFIG %%-------------------------------------------------------------------------
 %%%%%%%%%%%%
@@ -9,7 +9,7 @@ myStaffSize = #22
 #(set-global-staff-size myStaffSize)
 \paper {
   #(define fonts (make-pango-font-tree "JohnSans Text Pro" "Lilypond JohnSans White Pro" "Lilypond JohnSans Medium Pro" (/ myStaffSize 22)))
-  markup-system-spacing #'padding = #7
+  markup-system-spacing.padding = #7
   %system-system-spacing #'padding = #10
   indent = 0
   left-margin = 20\mm
@@ -17,26 +17,26 @@ myStaffSize = #22
   top-margin = 10\mm
   %paper-width = 138 \mm
   %paper-height = 214 \mm
-  top-markup-spacing #'padding = #0
-  markup-system-spacing #'padding = #5
-  markup-system-spacing #'stretchability = #5
-  score-system-spacing #'padding = #5
-  %last-bottom-spacing #'padding = #5
-  score-markup-spacing #'padding = #5
-  top-system-spacing #'padding = #5
+  top-markup-spacing.padding = #0
+  markup-system-spacing.padding = #5
+  markup-system-spacing.stretchability = #5
+  score-system-spacing.padding = #5
+  %last-bottom-spacing.padding = #5
+  score-markup-spacing.padding = #5
+  top-system-spacing.padding = #5
 
-  markup-markup-spacing #'padding = #1
-  %markup-markup-spacing #'stretchability = #0
-  %markup-markup-spacing #'minimum-distance = #0
-  %markup-markup-spacing #'basic-distance = #0
+  markup-markup-spacing.padding = #1
+  %markup-markup-spacing.stretchability = #0
+  %markup-markup-spacing.minimum-distance = #0
+  %markup-markup-spacing.basic-distance = #0
 
-  system-system-spacing #'padding = #2
-  %system-system-spacing #'minimum-distance = #1
-  system-system-spacing #'stretchability = #0
-  score-system-spacing #'stretchability = #5
+  system-system-spacing.padding = #2
+  %system-system-spacing.minimum-distance = #1
+  system-system-spacing.stretchability = #0
+  score-system-spacing.stretchability = #5
   print-page-number = ##f
-  last-bottom-spacing #'minimum-distance =#0
-  score-markup-spacing #'stretchability = #0
+  last-bottom-spacing.minimum-distance =#0
+  score-markup-spacing.stretchability = #0
 
   %first-page-number = #16
   %print-first-page-number = ##t
@@ -270,3 +270,11 @@ aFourR = \paper {
   %                                                                                                                                          (http://lilypond.org/) } } }
   tagline = ""
 }
+
+
+%{
+convert-ly (GNU LilyPond) 2.19.60  convert-ly: Processing `'...
+Applying conversion: 2.17.97, 2.18.0, 2.19.2, 2.19.7, 2.19.11,
+2.19.16, 2.19.22, 2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40,
+2.19.46, 2.19.49
+%}
