@@ -1,5 +1,5 @@
 verseA = \lyricmode {
-  \set stanza = #"1. "
+  \set stanza = #"1."
   Te -- be Bo -- ga hva -- li -- mo,
   sla -- već Tvo -- ja sve -- ta dje -- la.
   Tvo -- ju moć ve -- li -- ća -- mo,
@@ -10,7 +10,7 @@ verseA = \lyricmode {
 }
 
 verseB = \lyricmode {
-  \set stanza = #"2. "
+  \set stanza = #"2."
   Sve što mo -- že sla -- vi Te,
   ke -- ru -- bi -- ni, se -- ra -- fi -- ni.
   Pje -- va -- ju __ Ti sla -- vo -- poj,
@@ -21,7 +21,7 @@ verseB = \lyricmode {
 }
 
 verseC = \lyricmode {
-  \set stanza = #"3. "
+  \set stanza = #"3."
   Po -- gle -- daj __ na na -- rod svoj!
   %STARO
   %_ Mi -- lo -- stiv sva -- gda bu -- di!
@@ -35,7 +35,7 @@ verseC = \lyricmode {
 }
 
 verseD = \lyricmode {
-  \set stanza = #"4. "
+  \set stanza = #"4."
   Smi -- luj nam se Go -- spo -- de!
   Bla -- go -- slov nam svoj po -- dije -- li!
   Do -- bro -- tom __ nas pra -- ti svud
