@@ -11,7 +11,7 @@
 \include "s02_frbo.ily"
 
 \paper {
- \SIDE
+ \aFourL
 }
 
 global = {

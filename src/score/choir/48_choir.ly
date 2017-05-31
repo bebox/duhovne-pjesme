@@ -41,9 +41,6 @@
     \new Lyrics = "verse4" \with {
       \override VerticalAxisGroup #'staff-affinity = #CENTER
     }  
-    \new Lyrics = "verse5" \with {
-      \override VerticalAxisGroup #'staff-affinity = #CENTER
-    } 
     \new Staff \with {
       \override RestCollision.positioning-done = #merge-rests-on-positioning
       %instrumentName = \markup \center-column { "T" "B" }
@@ -56,7 +53,6 @@
     \context Lyrics = "verse2" \lyricsto "soprano" \verseB
     \context Lyrics = "verse3" \lyricsto "soprano" \verseC
     \context Lyrics = "verse4" \lyricsto "soprano" \verseD
-    \context Lyrics = "verse5" \lyricsto "soprano" \verseE
   >>
   \include "config/choir_layout_conf.ily"
 }

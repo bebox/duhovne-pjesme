@@ -15,7 +15,6 @@
 }
 
 global = {
-  \key es \major
-  \time 6/8
-  %\set Staff.midiInstrument = #"trumpet"
+  \key c \major
+  \time 4/4
 }

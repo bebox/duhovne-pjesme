@@ -23,7 +23,10 @@
       \override RestCollision.positioning-done = #merge-rests-on-positioning
       %instrumentName = \markup \center-column { "S" "A" }
     } <<
-      \new Voice = "soprano" { \voiceOne \soprano }
+      \new Voice = "soprano" { \voiceOne 
+                               \keepWithTag #'choir_Y-offset 
+                               \soprano 
+      }
       \new Voice = "alto" { \voiceTwo \alto }
     >>
     \new Lyrics = "verse1" \with {
