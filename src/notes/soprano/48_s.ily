@@ -1,6 +1,6 @@
 soprano = \relative c' {
   \global
-  \mark \default
+  \markMojPoc
   \partial 8
   b8 |
   es4 es8 es4 g8 |
@@ -13,7 +13,7 @@ soprano = \relative c' {
   es4. ~ es4
   
   %REFREN
-  \breathemoj
+  \breatheMoj
   es'8 |
   es4 es8 es( d) c |
   b4 b8 g4 c8 |

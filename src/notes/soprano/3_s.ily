@@ -1,5 +1,5 @@
 soprano = \relative c'' {
   \global
-  \mark \default
+  \markMojPoc
   b4 f b |
 }

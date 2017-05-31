@@ -120,23 +120,41 @@ myStaffSize = #22
   }
 }
 
-breathemoj = {
-  %\override Score.RehearsalMark.extra-spacing-width = #'(0 . 0)
-  %\override Score.RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0) 
-  %\once \override Score.RehearsalMark.X-offset = #0.05
-  %\once \override Score.RehearsalMark.Y-offset = #-1.5
-  %\once \override Score.RehearsalMark.outside-staff-priority = #1
-  %\override Score.RehearsalMark.break-align-symbols = #'(breathing-sign)
-  %\override Score.RehearsalMark.break-align-symbols = #'(breathing-sign)
-  %\mark \default
-  %\breathe
+breatheMoj = {
   \noBreak
   \once \override Score.RehearsalMark.Y-offset = #0.1
-  %\once \override Staff.BarLine #'extra-spacing-width = #'(-5 . 3)
   \once \override Staff.BarLine #'extra-spacing-width = #'(-2 . 3)
   \once \override Staff.BarLine #'color = #red
   \once \override Staff.BarLine.bar-extent = #'(1.5 . 2.5)
   \bar "|"
+  \mark \default
+}
+
+markMojPoc = {
+  \override Score.RehearsalMark.break-align-symbols = #'(time-signature)
+  \override Score.TimeSignature.break-align-anchor-alignment = #CENTER
+  \tag #'choir_Y-offset \once \override Score.RehearsalMark.Y-offset = #3.2
+  \tag #'markMojPoc_Y-offset0.0 \once \override Score.RehearsalMark.Y-offset = #0
+  \tag #'markMojPoc_Y-offset3.0 \once \override Score.RehearsalMark.Y-offset = #3
+  \tag #'markMojPoc_Y-offset3.1 \once \override Score.RehearsalMark.Y-offset = #3.1
+  \tag #'markMojPoc_Y-offset3.2 \once \override Score.RehearsalMark.Y-offset = #3.2
+  \tag #'markMojPoc_Y-offset3.3 \once \override Score.RehearsalMark.Y-offset = #3.3
+  \tag #'markMojPoc_Y-offset3.4 \once \override Score.RehearsalMark.Y-offset = #3.4
+  \tag #'markMojPoc_Y-offset3.5 \once \override Score.RehearsalMark.Y-offset = #3.5
+  \tag #'markMojPoc_Y-offset3.6 \once \override Score.RehearsalMark.Y-offset = #3.6
+  \tag #'markMojPoc_Y-offset3.7 \once \override Score.RehearsalMark.Y-offset = #3.7
+  \tag #'markMojPoc_Y-offset3.8 \once \override Score.RehearsalMark.Y-offset = #3.8
+  \tag #'markMojPoc_Y-offset3.9 \once \override Score.RehearsalMark.Y-offset = #3.9
+  \tag #'markMojPoc_Y-offset4.0 \once \override Score.RehearsalMark.Y-offset = #4.0
+  \mark \default
+}
+
+markMoj = {
+  \override Score.RehearsalMark.break-align-symbols = #'(key-signature)
+  \override Score.KeySignature.break-align-anchor = #2.8
+  \once \override Staff.BarLine.extra-spacing-width = #'(0 . 1)
+  \tag #'markMoj_Y-offset \once \override Score.RehearsalMark.Y-offset = #0.1
+  \tag #'choir_Y-offset \once \override Score.RehearsalMark.Y-offset = #3.2
   \mark \default
 }
 
@@ -161,6 +179,11 @@ left = { \once \override LyricText.X-offset = #-2.8 }                 % \left "S
     \override LyricText.font-size = #0
     \override LyricText.font-name = "JohnSans White Pro"
   } 
+}
+
+%Izmedu povisilica/snizilica i prve note dodaj space
+\layout {
+  \override Score.KeySignature.space-alist #'first-note = #'(extra-space . 2.8)
 }
 
 %%%%%%%%%%%%
@@ -264,7 +287,7 @@ aFourR = \paper {
 }
 
 \header {
-  copyright = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Creative Commons Attribution - ShareAlike 4.0 | Riječi Iskrene | Dravska 8, Pušćine } }
+  copyright = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Creative Commons—Attribution-ShareAlike 4.0 | Udruga “Riječi Iskrene” Dravska 8, 40305 Pušćine, Hrvatska } }
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { \simple #(strftime "%d/%m/%Y" (localtime (current-time)))
   %                                                                                                  \with-url #"http://lilypond.org/web/" { LilyPond \simple #(lilypond-version)
   %                                                                                                                                          (http://lilypond.org/) } } }
