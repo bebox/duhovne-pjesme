@@ -15,9 +15,11 @@
 
 \score {
   <<
-    \new ChordNames { \semiGermanChords \jazzChords \akordi }
+    \new ChordNames { \semiGermanChords 
+                      \jazzChords 
+                      \akordi }
     \new Staff { \removeWithTag #'fermata
-                 \keepWithTag #'(markMojPoc_Y-offset3.7 markMoj_Y-offset)
+                 \keepWithTag #'(markMojPoc_Y-offset markMoj_Y-offset align_anchor)
                  \soprano 
     }
     \addlyrics { \verseA }

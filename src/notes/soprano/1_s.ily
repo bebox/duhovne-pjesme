@@ -1,7 +1,7 @@
-soprano = \relative c'' {
+soprano = \relative c' {
   \global
   \markMojPoc
-  g2 g4 |
+  g'2 g4 |
   g4( fis) g |
   a4( h) a |
   g2.-\tag #'fermata \fermata |

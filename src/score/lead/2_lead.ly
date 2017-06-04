@@ -16,7 +16,7 @@
 \score {
   <<
     \new ChordNames { \semiGermanChords \jazzChords \akordi }
-    \new Staff { \keepWithTag #'(markMojPoc_Y-offset3.7 markMoj_Y-offset) 
+    \new Staff { \keepWithTag #'(markMojPoc_Y-offset markMoj_Y-offset align_anchor) 
                  \soprano 
     }
     \addlyrics { \verseA }

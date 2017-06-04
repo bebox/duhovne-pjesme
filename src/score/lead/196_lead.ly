@@ -17,7 +17,7 @@
   <<
     \new ChordNames { \semiGermanChords \jazzChords \akordi }
     %Y-offset from 3.0 - 4.0 by 0.1 step
-    \new Staff { \keepWithTag #'(markMojPoc_Y-offset0.0 markMoj_Y-offset) 
+    \new Staff { \keepWithTag #'(markMojPoc_Y-offset markMoj_Y-offset align_anchor) 
                  \soprano 
     }
     \addlyrics { \verseA }

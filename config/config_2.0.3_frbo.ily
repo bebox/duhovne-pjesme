@@ -30,7 +30,7 @@ myStaffSize = #22
   %markup-markup-spacing.minimum-distance = #0
   %markup-markup-spacing.basic-distance = #0
 
-  system-system-spacing.padding = #2
+  system-system-spacing.padding = #2.5
   %system-system-spacing.minimum-distance = #1
   system-system-spacing.stretchability = #0
   score-system-spacing.stretchability = #5
@@ -123,7 +123,7 @@ myStaffSize = #22
 breatheMoj = {
   \noBreak
   \once \override Score.RehearsalMark.Y-offset = #0.1
-  \once \override Staff.BarLine #'extra-spacing-width = #'(-2 . 3)
+  \once \override Staff.BarLine #'extra-spacing-width = #'(-2 . 2)
   \once \override Staff.BarLine #'color = #red
   \once \override Staff.BarLine.bar-extent = #'(1.5 . 2.5)
   \bar "|"
@@ -131,28 +131,32 @@ breatheMoj = {
 }
 
 markMojPoc = {
-  \override Score.RehearsalMark.break-align-symbols = #'(time-signature)
-  \override Score.TimeSignature.break-align-anchor-alignment = #CENTER
+  \once \override Score.RehearsalMark.break-align-symbols = #'(time-signature)
+  \tag #'align_anchor \once \override Score.TimeSignature.break-align-anchor = #1.39
+  %\override Score.RehearsalMark.Y-extent = ##f
+  \tag #'align_center \once \override Score.TimeSignature.break-align-anchor-alignment = #CENTER
   \tag #'choir_Y-offset \once \override Score.RehearsalMark.Y-offset = #3.2
-  \tag #'markMojPoc_Y-offset0.0 \once \override Score.RehearsalMark.Y-offset = #0
-  \tag #'markMojPoc_Y-offset3.0 \once \override Score.RehearsalMark.Y-offset = #3
-  \tag #'markMojPoc_Y-offset3.1 \once \override Score.RehearsalMark.Y-offset = #3.1
-  \tag #'markMojPoc_Y-offset3.2 \once \override Score.RehearsalMark.Y-offset = #3.2
-  \tag #'markMojPoc_Y-offset3.3 \once \override Score.RehearsalMark.Y-offset = #3.3
-  \tag #'markMojPoc_Y-offset3.4 \once \override Score.RehearsalMark.Y-offset = #3.4
-  \tag #'markMojPoc_Y-offset3.5 \once \override Score.RehearsalMark.Y-offset = #3.5
-  \tag #'markMojPoc_Y-offset3.6 \once \override Score.RehearsalMark.Y-offset = #3.6
-  \tag #'markMojPoc_Y-offset3.7 \once \override Score.RehearsalMark.Y-offset = #3.7
-  \tag #'markMojPoc_Y-offset3.8 \once \override Score.RehearsalMark.Y-offset = #3.8
-  \tag #'markMojPoc_Y-offset3.9 \once \override Score.RehearsalMark.Y-offset = #3.9
-  \tag #'markMojPoc_Y-offset4.0 \once \override Score.RehearsalMark.Y-offset = #4.0
+  \tag #'markMojPoc_Y-offset \once \override Score.RehearsalMark.Y-offset = #0.1
+  %\tag #'markMojPoc_Y-offset3.0 \once \override Score.RehearsalMark.Y-offset = #3
+  %\tag #'markMojPoc_Y-offset3.1 \once \override Score.RehearsalMark.Y-offset = #3.1
+  %\tag #'markMojPoc_Y-offset3.2 \once \override Score.RehearsalMark.Y-offset = #3.2
+  %\tag #'markMojPoc_Y-offset3.3 \once \override Score.RehearsalMark.Y-offset = #3.3
+  %\tag #'markMojPoc_Y-offset3.4 \once \override Score.RehearsalMark.Y-offset = #3.4
+  %\tag #'markMojPoc_Y-offset3.5 \once \override Score.RehearsalMark.Y-offset = #3.5
+  %\tag #'markMojPoc_Y-offset3.6 \once \override Score.RehearsalMark.Y-offset = #3.6
+  %\tag #'markMojPoc_Y-offset3.7 \once \override Score.RehearsalMark.Y-offset = #3.7
+  %\tag #'markMojPoc_Y-offset3.8 \once \override Score.RehearsalMark.Y-offset = #3.8
+  %\tag #'markMojPoc_Y-offset3.9 \once \override Score.RehearsalMark.Y-offset = #3.9
+  %\tag #'markMojPoc_Y-offset4.0 \once \override Score.RehearsalMark.Y-offset = #4.0
   \mark \default
 }
 
 markMoj = {
-  \override Score.RehearsalMark.break-align-symbols = #'(key-signature)
-  \override Score.KeySignature.break-align-anchor = #2.8
-  \once \override Staff.BarLine.extra-spacing-width = #'(0 . 1)
+  %\override Score.RehearsalMark.outside-staff-priority = ##f
+  %\markLengthOn
+  \once \override Score.RehearsalMark.break-align-symbols = #'(key-signature staff-bar)
+  \once \override Score.KeySignature.break-align-anchor = #2.9
+  \once \override Staff.BarLine.extra-spacing-width = #'(0 . 1.5)
   \tag #'markMoj_Y-offset \once \override Score.RehearsalMark.Y-offset = #0.1
   \tag #'choir_Y-offset \once \override Score.RehearsalMark.Y-offset = #3.2
   \mark \default

@@ -24,7 +24,7 @@
       %instrumentName = \markup \center-column { "S" "A" }
     } <<
       \new Voice = "soprano" { \voiceOne 
-                               \keepWithTag #'choir_Y-offset 
+                               \keepWithTag #'(choir_Y-offset align_center fermata)
                                \soprano 
       }
       \new Voice = "alto" { \voiceTwo \alto }
