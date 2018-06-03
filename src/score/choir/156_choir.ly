@@ -1,5 +1,5 @@
 %version
-\include "config/version.ily"
+\version "2.19.60"
 
 %song
 \include "song/156.ily"
